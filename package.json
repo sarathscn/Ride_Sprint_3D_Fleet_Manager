@@ -1,0 +1,16 @@
+{
+  "name": "3d-print-manager",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pdfkit": "^0.15.0",
+    "sql.js": "^1.12.0"
+  }
+}
+

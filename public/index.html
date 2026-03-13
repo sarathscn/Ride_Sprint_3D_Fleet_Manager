@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ride Sprint 3D — Print Manager</title>
+  <link rel="icon" type="image/png" href="/ride_sprint_logo_v2_1773323382197.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar Nav -->
+    <nav id="sidebar">
+      <div class="sidebar-logo">
+        <img src="/ride_sprint_logo_v2_1773323382197.png" alt="Logo" class="nav-logo"/>
+        <div>
+          <div class="nav-brand">RIDE SPRINT</div>
+          <div class="nav-sub">3D PRINT MANAGER</div>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#dashboard"  class="nav-link" data-page="dashboard">
+          <span class="nav-icon">⬛</span> DASHBOARD
+        </a></li>
+        <li><a href="#analysis"   class="nav-link" data-page="analysis">
+          <span class="nav-icon">📈</span> ANALYSIS
+        </a></li>
+        <li><a href="#new-project" class="nav-link" data-page="new-project">
+          <span class="nav-icon">＋</span> NEW PROJECT
+        </a></li>
+        <li><a href="#history"    class="nav-link" data-page="history">
+          <span class="nav-icon">◈</span> PROJECT HISTORY
+        </a></li>
+        <li><a href="#invoices"   class="nav-link" data-page="invoices">
+          <span class="nav-icon">◉</span> INVOICES
+        </a></li>
+        <li><a href="#printer"    class="nav-link" data-page="printer">
+          <span class="nav-icon">⬡</span> PRINTER HEALTH
+        </a></li>
+      </ul>
+      <div class="sidebar-spacer" style="flex:1"></div>
+      <ul class="nav-links nav-bottom">
+        <li><a href="#help"       class="nav-link" data-page="help">
+          <span class="nav-icon">❓</span> HELP
+        </a></li>
+        <li><a href="#about"      class="nav-link" data-page="about">
+          <span class="nav-icon">ℹ️</span> ABOUT
+        </a></li>
+        <li><a href="#settings"   class="nav-link" data-page="settings">
+          <span class="nav-icon">⚙️</span> SETTINGS
+        </a></li>
+      </ul>
+      <div class="sidebar-footer">
+        <div>v2.1 — 3D Print Manager</div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main">
+      <div id="page-content"></div>
+    </main>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast"></div>
+
+  <!-- Mouse Trailer -->
+  <div id="mouse-trailer"></div>
+  <div id="mouse-dot"></div>
+
+  <!-- Modal overlay -->
+  <div id="modal-overlay" style="display:none">
+    <div id="modal-box">
+      <div id="modal-header"></div>
+      <div id="modal-body"></div>
+      <div id="modal-footer"></div>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/projects.js"></script>
+  <script src="/js/history.js"></script>
+  <script src="/js/invoice.js"></script>
+  <script src="/js/printer.js"></script>
+  <script src="/js/settings.js"></script>
+  <script src="/js/analytics.js"></script>
+</body>
+</html>

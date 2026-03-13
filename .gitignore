@@ -1,0 +1,31 @@
+# Professional 3D Printer Manager Node Environment
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database (Local SQLite)
+*.db
+printmanager.db-journal
+printmanager.db-wal
+# Note: We ignore the actual .db file to keep user data private
+
+# Build & Tooling
+dist/
+.temp/
+tmp/
+.vscode/
+.idea/
+.DS_Store
+
+# Advanced Agentic Metadata
+.gemini/
+brain/
+implementation_plan.md
+task.md
+walkthrough.md
